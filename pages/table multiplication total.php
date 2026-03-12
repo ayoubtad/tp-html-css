@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>description de la temperature de l'eau</title>
+    <title>tablede multiplication totale</title>
     <link rel="stylesheet" href="../css/style2.css">
 </head>
 
