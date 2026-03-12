@@ -1,67 +1,56 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 20px;
-    background: linear-gradient(135deg, #6a11cb, #4874be);
-    color: #fff;
-    text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6a0dad 0%, #4a5bcc 100%);
+  font-family: system-ui, -apple-system, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  /* Le texte brut du PHP (le chiffre) hérite de ces styles */
+  font-size: 4.5rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-shadow: 0 2px 24px rgba(255, 255, 255, 0.2);
+  gap: 0;
+  padding: 2rem;
+  text-align: center;
 }
 
-body > div {
-    background: rgba(0, 0, 0, 0.4);
-    padding: 40px 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+/* Masquer les <br> inutiles */
+br {
+  display: none;
 }
 
-php, body > div > p {
-    font-size: 2rem;
-    margin-bottom: 30px;
-}
-
+/* Liens stylisés en boutons */
 a {
-    text-decoration: none;
-    color: #fff;
-    background: linear-gradient(45deg, #ff6a00, #ee0979);
-    padding: 12px 25px;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    display: inline-block;
-    margin: 10px 5px;
-    font-weight: bold;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(90deg, #ff4e1a, #ff6b35);
+  border-radius: 999px;
+  padding: 0.75rem 2.2rem;
+  margin: 0.5rem 0;
+  box-shadow: 0 4px 18px rgba(255, 78, 26, 0.45);
+  transition: transform 0.18s, box-shadow 0.18s;
+  letter-spacing: 0.02em;
+  /* Réinitialise la taille héritée du body */
+  font-size: 1rem;
 }
 
 a:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-.jour {
-    font-size: 8rem;
-    font-weight: 900;
-    color: #ffeb3b;
-    text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);
-    margin-bottom: 50px;
-    text-align: center;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 26px rgba(255, 78, 26, 0.6);
 }
 
-@media screen and (max-width: 600px) {
-    body {
-        padding: 20px 10px;
-    }
-
-    a {
-        font-size: 1rem;
-        padding: 8px 15px;
-    }
+a:active {
+  transform: scale(0.97);
 }
