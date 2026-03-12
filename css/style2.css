@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(320deg, #f07ab5, #dbce68, #52bea9);
+    min-height: 100vh;
+    font-family: system-ui, sans-serif;
+    color: #111;
+    padding: 2rem 1rem;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.6rem;
+    margin-bottom: 2.5rem;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2rem 1.8rem;
+}
+
+/* Chaque .table devient une carte propre */
+.table {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    overflow: hidden;
+}
+
+.table h3 {
+    background: linear-gradient(to right, #6b9eff, #d81196);
+    color: white;
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.table {
+    padding: 1.3rem 1.5rem;
+}
+
+
+.table br {
+    display: block;
+    content: "";
+    margin-bottom: 0.8rem;
+}
+
+.table br + * {
+    display: block;
+    font-size: 1.15rem;
+    margin-bottom: 0.8rem;
+    color: #222;
+}
+
+/* Liens de retour → alignés HORIZONTALEMENT */
+.container a {
+    display: flex;
+    justify-content: center;
+    margin: 0.8rem 1.2rem;
+    padding: 1rem 1.8rem;
+    background: rgba(255,255,255,0.24);
+    color: #111;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+}
+
+.container a:hover {
+    background: rgba(255,255,255,0.38);
+    transform: translateY(-2px);
+}
+
+
+@media (max-width: 800px) {
+    .container {
+        gap: 1.6rem;
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
+    .container a {
+        display: block;
+        margin: 0.8rem auto;
+        width: 90%;
+        max-width: 380px;
+        text-align: center;
+    }
+}

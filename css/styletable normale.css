@@ -1,0 +1,88 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:linear-gradient(320deg,#f07ab5,#dbce68,#52bea9);
+min-height:100vh;
+font-family:system-ui,sans-serif;
+color:#111;
+padding:2rem 1rem;
+text-align:center;
+}
+
+h1{
+color:white;
+font-size:2.6rem;
+margin-bottom:2.5rem;
+}
+
+/* zone de la table de multiplication */
+body{
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+body br{
+margin-bottom:6px;
+}
+
+/* lignes de calcul */
+body{
+font-size:1.2rem;
+}
+
+body::before{
+content:"Table de multiplication";
+display:block;
+color:white;
+font-size:2.4rem;
+font-weight:700;
+margin-bottom:2rem;
+}
+
+/* style des calculs */
+body{
+line-height:1.8;
+}
+
+body{
+background-size:cover;
+}
+
+/* liens */
+a{
+display:inline-block;
+margin:1rem;
+padding:1rem 1.8rem;
+background:rgba(255,255,255,0.85);
+color:#111;
+text-decoration:none;
+font-weight:600;
+border-radius:10px;
+transition:all .25s ease;
+}
+
+a:hover{
+background:white;
+transform:translateY(-2px);
+}
+
+/* liens horizontaux */
+a{
+white-space:nowrap;
+}
+
+@media(max-width:800px){
+
+a{
+display:block;
+margin:.8rem auto;
+width:90%;
+max-width:380px;
+}
+
+}

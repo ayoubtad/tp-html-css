@@ -3,12 +3,12 @@
   <html>
     <head>
       <meta charset="utf-8" />
-      <link rel="stylesheet" href="./css/style.css" />
+      <link rel="stylesheet" href="../css/style.css"/>
     </head>
     <body>
       <h1>Formulaire</h1>
       <section>
-        <form action="">
+        <form action="traitement" method="GET"></form>
           <label for="nom">Nom</label>
           <input type="text"name="nom"id="nom"placeholder="Entrez votre nom"/>
           <br />
@@ -43,11 +43,9 @@
           <br />
           <textarea rows="20px" cols="50px" name="textearea" id="" placeholder="Saisissez vos justificatifs">
           </textarea>
-        </form>
       </section>
       <br><br><br>
-      <a href="confirmation.html">Pour confirmer votre formulaire appuyer ici</a>
-      <a href="./confirmation.html"></a>  
+      <a href="confirmation.php">Pour confirmer votre formulaire appuyer ici</a>  
     </body>
   </html>
 </html>
