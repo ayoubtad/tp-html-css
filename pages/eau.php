@@ -4,7 +4,7 @@
 <head>
         <meta charset="UTF-8">
         <title>description de la temperature de l'eau</title>
-        <link rel="stylesheet" href="../css/style_eau.css"/>
+        <link rel="stylesheet" href="../css/style_eau.css" />
 </head>
 
 <?php
@@ -27,9 +27,36 @@ if ($temperature < 0) {
         $titre = "vapeur";
         $classe = "vapeur";
 }
+
+// Déterminer la saison basée sur le mois actuel
+$mois_actuel = date('n');
+$saison = '';
+
+switch ($mois_actuel) {
+    case 12:
+    case 1:
+    case 2:
+        $saison = 'hiver';
+        break;
+    case 3:
+    case 4:
+    case 5:
+        $saison = 'printemps';
+        break;
+    case 6:
+    case 7:
+    case 8:
+        $saison = 'ete';
+        break;
+    case 9:
+    case 10:
+    case 11:
+        $saison = 'automne';
+        break;
+}
 ?>
 
-<body class="<?php echo $classe; ?>">
+<body class="<?php echo $classe; ?> saison-<?php echo $saison; ?>">
         <nav>
                 <ul>
                         <li><a href="index.php">Accueil</a></li>
@@ -45,10 +72,10 @@ if ($temperature < 0) {
                 <h1><?php echo $titre; ?></h1>
                 <p class="temperature"><?php echo $temperature; ?>°C</p>
                 <div class="links-container">
-            <a href="index.php">Accueil</a>
-            <a href="formulaire.php">Formulaire</a>
-            <a href="table multiplication.php">Table de 4</a>
-            <a href="table multiplication total.php">Toutes les tables</a>
+                        <a href="index.php">Accueil</a>
+                        <a href="formulaire.php">Formulaire</a>
+                        <a href="table multiplication.php">Table de 4</a>
+                        <a href="table multiplication total.php">Toutes les tables</a>
                 </div>
         </main>
 </body>
