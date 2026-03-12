@@ -24,11 +24,11 @@
 
         <div class="container">
             <?php
-            for ($i = 1; $i <= 9; $i++) {
+            for ($i = 1; $i <= 10; $i++) {
                 echo "<div class='table'>";
                 echo "<h3>Table de $i</h3>";
 
-                for ($j = 1; $j <= 9; $j++) {
+                for ($j = 1; $j <= 10; $j++) {
                     $produit = $i * $j;
                     echo "$i × $j = $produit <br>";
                 }
