@@ -9,7 +9,6 @@
       <h1>Confirmation</h1>
       <p>Votre formulaire a été soumis avec succès !</p>
       <a href="index.php">Retour à l'accueil</a>
-      <a href="./index.php"></a> 
       <br><br>
       <a href="./eau.php">situation de l'eau</a>
       <br><br>

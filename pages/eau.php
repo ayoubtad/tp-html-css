@@ -7,30 +7,50 @@
         <link rel="stylesheet" href="../css/style_eau.css"/>
 </head>
 
-<body>
-        <?php
-        $temperature = 200;
-        if ($temperature < 0) {
-                echo "<h1>glacée<h1>";
-        } else if ($temperature >= 0 && $temperature < 25) {
-                echo "<h1>froide<h1>";
-        } else if ($temperature >= 25 && $temperature < 50) {
-                echo "<h1>chaude<h1>";
-        } else if ($temperature >= 50 && $temperature < 100) {
-                echo "<h1>brulante<h1>";
-        } else {
-                echo "<h1>vapeur<h1>";
-        }
-        ?>
-        <br></br>
-    <a href="index.php">retour a l'acceuil</a>
-    <br></br>
-    <a href="eau.php">situation de l'eau</a>
-    <br></br>
-    <a href="formulaire.php">retour au formulaire</a>
-    <br></br>
-     
-    <a href="table multiplication total.php">toutes les tables de multiplication</a>
+<?php
+$temperature = 200;
+$classe = "";
+
+if ($temperature < 0) {
+        $titre = "glacée";
+        $classe = "glacee";
+} else if ($temperature >= 0 && $temperature < 25) {
+        $titre = "froide";
+        $classe = "froide";
+} else if ($temperature >= 25 && $temperature < 50) {
+        $titre = "chaude";
+        $classe = "chaude";
+} else if ($temperature >= 50 && $temperature < 100) {
+        $titre = "brulante";
+        $classe = "brulante";
+} else {
+        $titre = "vapeur";
+        $classe = "vapeur";
+}
+?>
+
+<body class="<?php echo $classe; ?>">
+        <nav>
+                <ul>
+                        <li><a href="index.php">Accueil</a></li>
+                        <li><a href="formulaire.php">Formulaire de contact</a></li>
+                        <li><a href="table multiplication.php">Table de 4</a></li>
+                        <li><a href="table multiplication total.php">Tables 0 à 10</a></li>
+                        <li><a href="mois.php">Mois</a></li>
+                        <li><a href="eau.php">Eau</a></li>
+                </ul>
+        </nav>
+
+        <main>
+                <h1><?php echo $titre; ?></h1>
+                <p class="temperature"><?php echo $temperature; ?>°C</p>
+                <div class="links-container">
+            <a href="index.php">Accueil</a>
+            <a href="formulaire.php">Formulaire</a>
+            <a href="table multiplication.php">Table de 4</a>
+            <a href="table multiplication total.php">Toutes les tables</a>
+                </div>
+        </main>
 </body>
 
 </html>
