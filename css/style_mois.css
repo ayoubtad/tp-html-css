@@ -15,6 +15,24 @@ body {
   color: white;
   padding: 0;
   text-align: center;
+  transition: background 0.5s ease;
+}
+
+/* Ambiances saisonnières */
+body.saison-hiver {
+  background: linear-gradient(135deg, #b0c4de 0%, #708090 50%, #4a5568 100%);
+}
+
+body.saison-printemps {
+  background: linear-gradient(135deg, #90ee90 0%, #3cb371 50%, #228b22 100%);
+}
+
+body.saison-ete {
+  background: linear-gradient(135deg, #ffd700 0%, #ffb347 50%, #ff8c00 100%);
+}
+
+body.saison-automne {
+  background: linear-gradient(135deg, #dc8c00 0%, #b8601e 50%, #8b4513 100%);
 }
 
 /* Navigation */
@@ -57,6 +75,47 @@ nav a:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(255, 78, 26, 0.5);
   background: linear-gradient(90deg, #ff6b35, #ff843d);
+}
+
+/* Liens pour chaque saison */
+body.saison-hiver nav a {
+  background: linear-gradient(90deg, #4a5568, #6b7280);
+  box-shadow: 0 3px 12px rgba(74, 85, 104, 0.3);
+}
+
+body.saison-hiver nav a:hover {
+  box-shadow: 0 6px 20px rgba(74, 85, 104, 0.5);
+  background: linear-gradient(90deg, #6b7280, #9ca3af);
+}
+
+body.saison-printemps nav a {
+  background: linear-gradient(90deg, #228b22, #3cb371);
+  box-shadow: 0 3px 12px rgba(34, 139, 34, 0.3);
+}
+
+body.saison-printemps nav a:hover {
+  box-shadow: 0 6px 20px rgba(34, 139, 34, 0.5);
+  background: linear-gradient(90deg, #3cb371, #90ee90);
+}
+
+body.saison-ete nav a {
+  background: linear-gradient(90deg, #ff8c00, #ffa500);
+  box-shadow: 0 3px 12px rgba(255, 140, 0, 0.3);
+}
+
+body.saison-ete nav a:hover {
+  box-shadow: 0 6px 20px rgba(255, 140, 0, 0.5);
+  background: linear-gradient(90deg, #ffa500, #ffb347);
+}
+
+body.saison-automne nav a {
+  background: linear-gradient(90deg, #8b4513, #a0694e);
+  box-shadow: 0 3px 12px rgba(139, 69, 19, 0.3);
+}
+
+body.saison-automne nav a:hover {
+  box-shadow: 0 6px 20px rgba(139, 69, 19, 0.5);
+  background: linear-gradient(90deg, #a0694e, #d2691e);
 }
 
 /* Main content */
@@ -112,4 +171,41 @@ a:hover {
 
 a:active {
   transform: scale(0.97);
+}
+
+/* Autres liens pour chaque saison */
+body.saison-hiver a {
+  background: linear-gradient(90deg, #4a5568, #6b7280);
+  box-shadow: 0 4px 18px rgba(74, 85, 104, 0.45);
+}
+
+body.saison-hiver a:hover {
+  box-shadow: 0 8px 26px rgba(74, 85, 104, 0.6);
+}
+
+body.saison-printemps a {
+  background: linear-gradient(90deg, #228b22, #3cb371);
+  box-shadow: 0 4px 18px rgba(34, 139, 34, 0.45);
+}
+
+body.saison-printemps a:hover {
+  box-shadow: 0 8px 26px rgba(34, 139, 34, 0.6);
+}
+
+body.saison-ete a {
+  background: linear-gradient(90deg, #ff8c00, #ffa500);
+  box-shadow: 0 4px 18px rgba(255, 140, 0, 0.45);
+}
+
+body.saison-ete a:hover {
+  box-shadow: 0 8px 26px rgba(255, 140, 0, 0.6);
+}
+
+body.saison-automne a {
+  background: linear-gradient(90deg, #8b4513, #a0694e);
+  box-shadow: 0 4px 18px rgba(139, 69, 19, 0.45);
+}
+
+body.saison-automne a:hover {
+  box-shadow: 0 8px 26px rgba(139, 69, 19, 0.6);
 }
