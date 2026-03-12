@@ -71,12 +71,8 @@ switch ($mois_actuel) {
         <main>
                 <h1><?php echo $titre; ?></h1>
                 <p class="temperature"><?php echo $temperature; ?>°C</p>
-                <div class="links-container">
-                        <a href="index.php">Accueil</a>
-                        <a href="formulaire.php">Formulaire</a>
-                        <a href="table multiplication.php">Table de 4</a>
-                        <a href="table multiplication total.php">Toutes les tables</a>
-                </div>
+                
+                
         </main>
 </body>
 
