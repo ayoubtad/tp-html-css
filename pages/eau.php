@@ -28,35 +28,11 @@ if ($temperature < 0) {
         $eau = "vapeur";
 }
 
-// Déterminer la saison basée sur le mois actuel
-$mois_actuel = date('n');
-$saison = '';
 
-switch ($mois_actuel) {
-        case 12:
-        case 1:
-        case 2:
-                $saison = 'hiver';
-                break;
-        case 3:
-        case 4:
-        case 5:
-                $saison = 'printemps';
-                break;
-        case 6:
-        case 7:
-        case 8:
-                $saison = 'ete';
-                break;
-        case 9:
-        case 10:
-        case 11:
-                $saison = 'automne';
-                break;
-}
+
 ?>
 
-<body class="<?php echo $eau; ?> saison-<?php echo $saison; ?>">
+<body class="<?php echo $eau; ?>">
         <nav>
                 <ul>
                         <li><a href="index.php">Accueil</a></li>
