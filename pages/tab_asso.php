@@ -57,7 +57,6 @@ for ($i = 1; $i <= 12; $i++) {
                 <li><a href="table multiplication.php">table de 4</a></li>
                 <li><a href="#">Exercice-4</a></li>
                 <li><a href="formulaire.php">formulaire de contact</a></li>
-                <li><a href="tab_asso.php">dates de mois</a></li>
             </ul>
         </nav>
     </header>

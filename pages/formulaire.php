@@ -10,7 +10,6 @@
   <nav>
     <ul>
       <li><a href="index.php">Accueil</a></li>
-      <li><a href="formulaire.php">Formulaire de contact</a></li>
       <li><a href="table multiplication.php">Table de 4</a></li>
       <li><a href="table multiplication total.php">Tables 0 à 10</a></li>
       <li><a href="mois.php">Mois</a></li>
