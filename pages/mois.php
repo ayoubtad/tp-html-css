@@ -60,9 +60,10 @@ switch ($mois) {
 <body class="saison-<?php echo $saison; ?>">
     <nav>
         <ul>
+            <li><a href="page1.php">Page 1</a></li>
             <li><a href="index.php">Accueil</a></li>
             <li><a href="formulaire.php">Formulaire de contact</a></li>
-            <li><a href="table multiplication.php">Table de 4</a></li>
+            <li><a href="table multiplication.php">Table de multiplication</a></li>
             <li><a href="table multiplication total.php">Tables 0 à 10</a></li>
             <li><a href="eau.php">Eau</a></li>
             <li><a href="tab_asso.php">dates de mois</a></li>

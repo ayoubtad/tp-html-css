@@ -51,10 +51,11 @@ for ($i = 1; $i <= 12; $i++) {
         <h1>Le premier TP en HTML/CSS</h1>
         <nav>
             <ul>
+                <li><a href="page1.php">Page 1</a></li>
                 <li><a href="index.php">accueil</a></li>
                 <li><a href="eau.php">eau</a></li>
                 <li><a href="table multiplication total.php">toutes les tables de multiplication</a></li>
-                <li><a href="table multiplication.php">table de 4</a></li>
+                <li><a href="table multiplication.php">Table de multiplication</a></li>
                 <li><a href="#">Exercice-4</a></li>
                 <li><a href="formulaire.php">formulaire de contact</a></li>
             </ul>

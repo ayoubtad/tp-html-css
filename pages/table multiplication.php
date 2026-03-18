@@ -18,12 +18,13 @@ for ($i = 0; $i <= 12; $i++) {
 <head>
     <meta charset="UTF-8">
     <title>Table de multiplication</title>
-    <link rel="stylesheet" href="../css/styletable normale.css">
+    <link rel="stylesheet" href="../css/styletable normale.css?v=<?php echo time(); ?>">
 </head>
 
 <body>
     <nav>
         <ul>
+            <li><a href="page1.php">Page 1</a></li>
             <li><a href="index.php">Accueil</a></li>
             <li><a href="formulaire.php">Formulaire de contact</a></li>
             <li><a href="table multiplication total.php">Tables 0 à 10</a></li>

@@ -14,7 +14,6 @@ body {
   align-items: center;
   justify-content: flex-start;
   padding: 0;
-  gap: 0.5rem;
 }
 
 /* Navigation */
@@ -22,7 +21,7 @@ nav {
   width: 100%;
   background: rgba(255, 255, 255, 0.28);
   backdrop-filter: blur(8px);
-  padding: 1.5rem 2rem;
+  padding: 1rem 2rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -41,7 +40,7 @@ nav ul {
 
 nav a {
   display: inline-block;
-  padding: 0.8rem 2rem;
+  padding: 0.6rem 1.8rem;
   background: linear-gradient(90deg, #ff4e1a, #ff6b35);
   color: white;
   text-decoration: none;
@@ -62,20 +61,20 @@ nav a:hover {
 /* Main content */
 main {
   width: 100%;
-  padding: 3rem 2rem;
+  padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 br { display: block; }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
   color: rgb(117, 0, 0);
-  margin-bottom: 1rem;
+  margin-bottom: 0.2rem;
   letter-spacing: 0.04em;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -88,22 +87,22 @@ h1 {
   gap: 1rem;
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(10px);
-  padding: 1.5rem 2.5rem;
+  padding: 1rem 2.5rem;
   border-radius: 50px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.5);
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .multiplication-form label {
-  font-weight: 700;
-  font-size: 1.15rem;
+  font-weight: 800;
+  font-size: 1.25rem;
   color: #222;
 }
 
 .number-input {
-  padding: 0.6rem 1rem;
-  font-size: 1.1rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 1.25rem;
   border: 2px solid rgba(255, 255, 255, 0.8);
   border-radius: 12px;
   width: 110px;
@@ -122,14 +121,14 @@ h1 {
 }
 
 .calc-btn {
-  padding: 0.7rem 1.8rem;
+  padding: 0.6rem 2rem;
   background: linear-gradient(90deg, #ff4e1a, #ff6b35);
   color: white;
   border: none;
   border-radius: 12px;
   cursor: pointer;
-  font-weight: 700;
-  font-size: 1.05rem;
+  font-weight: 800;
+  font-size: 1.15rem;
   box-shadow: 0 4px 15px rgba(255, 78, 26, 0.3);
   transition: all 0.3s ease;
 }
@@ -144,36 +143,36 @@ h1 {
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(16px);
   border-radius: 24px;
-  padding: 2.5rem 4rem;
-  margin-bottom: 2rem;
+  padding: 1.5rem 4rem;
+  margin-bottom: 1rem;
   text-align: center;
-  min-width: 300px;
+  min-width: 360px;
   border: 2px solid rgba(255, 255, 255, 0.6);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
 }
 
 .table-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.2);
 }
 
 .table-card h3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: rgb(117, 0, 0);
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  border-bottom: 2px dashed rgba(117, 0, 0, 0.3);
-  padding-bottom: 1rem;
+  border-bottom: 3px dashed rgba(117, 0, 0, 0.3);
+  padding-bottom: 0.5rem;
 }
 
 .results p {
   font-size: 1.35rem;
-  line-height: 2.3;
-  font-weight: 700;
+  line-height: 1.5;
+  font-weight: 800;
   color: #222;
-  text-shadow: 1px 1px 0px rgba(255,255,255,0.6);
+  text-shadow: 1px 1px 0px rgba(255,255,255,0.8);
 }
 
 a {
