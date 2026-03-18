@@ -49,30 +49,17 @@ for ($i = 1; $i <= 12; $i++) {
 <body>
     <header>
         <h1>Le premier TP en HTML/CSS</h1>
-        <ul>
-            <li>
-                <a href="index.php">accueil</a>
-            </li>
-
-            <li>
-                <a href="eau.php">eau</a>
-            </li>
-            <li>
-                <a href="table multiplication total.php">toutes les tables de multiplication</a>
-            </li>
-            <li>
-                <a href="table multiplication.php">table de 4</a>
-            </li>
-            <li>
-                <a href="#">Exercice-4</a>
-            </li>
-            <li>
-                <a href="formulaire.php">formulaire de contact</a>
-            </li>
-            <li>
-                <a href="tab_asso.php">dates de mois</a>
-            </li>
-        </ul>
+        <nav>
+            <ul>
+                <li><a href="index.php">accueil</a></li>
+                <li><a href="eau.php">eau</a></li>
+                <li><a href="table multiplication total.php">toutes les tables de multiplication</a></li>
+                <li><a href="table multiplication.php">table de 4</a></li>
+                <li><a href="#">Exercice-4</a></li>
+                <li><a href="formulaire.php">formulaire de contact</a></li>
+                <li><a href="tab_asso.php">dates de mois</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section>
