@@ -25,7 +25,7 @@
 
     <section>
       <h2>C'est quoi HTML</h2>
-      <img src="../image.png" alt="Logo HTML5" height="130">
+      <img src="../images/image.png" alt="Logo HTML5" height="130">
       <p>HTML (HyperText Markup Language) est un langage standard dans le développement web.
         Il sert à créer la structure des pages web grâce à des balises pour organiser le contenu
         tel que les titres, les paragraphes, les images et les liens,
@@ -34,7 +34,7 @@
 
     <section>
       <h2>C'est quoi CSS</h2>
-      <img src="../image copy.png" alt="Logo CSS3" height="130">
+      <img src="../images/image copy.png" alt="Logo CSS3" height="130">
       <p>CSS (Cascading Style Sheets) est le langage utilisé pour définir l'apparence
         et la mise en forme des pages web. Il permet de modifier les couleurs, les tailles,
         les polices, les marges et la disposition des éléments HTML.
