@@ -27,9 +27,6 @@ if ($temperature < 0) {
         $titre = "vapeur";
         $eau = "vapeur";
 }
-
-
-
 ?>
 
 <body class="<?php echo $eau; ?>">
