@@ -15,5 +15,7 @@
       <a href="./table multiplication.php">table de multi de 4</a>
       <br><br>
       <a href="./table multiplication total.php"> toutes les tables de multiplication</a>
+      <br><br>
+      <a href="tab_asso.php">dates de mois</a>
     </body>
   </html>

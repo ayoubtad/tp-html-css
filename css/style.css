@@ -147,18 +147,33 @@ main section p {
 
 br { display: none; }
 
-section {
-  width: 100%;
+.contact-section {
   max-width: 600px;
-  background: rgba(255, 255, 255, 0.28);
-  backdrop-filter: blur(8px);
-  border-radius: 14px;
-  padding: 1rem 1.8rem;
+}
+
+.contact-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 1rem;
-  row-gap: 0.3rem;
-  align-items: end;
+  column-gap: 1.5rem;
+  row-gap: 1rem;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+  color: #222;
 }
 
 input[type="text"],
@@ -168,127 +183,101 @@ select,
 textarea {
   display: block;
   width: 100%;
-  padding: 0.5rem 0.75rem;
-  font-size: 0.9rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
   border: 1.5px solid rgba(0,0,0,0.14);
-  border-radius: 7px;
+  border-radius: 8px;
   background: rgba(255,255,255,0.88);
   font-family: inherit;
-  margin-bottom: 0.3rem;
+  transition: all 0.2s ease;
 }
 
 input:focus, select:focus, textarea:focus {
   outline: none;
   border-color: #d81196;
   box-shadow: 0 0 0 3px rgba(216,17,150,0.13);
+  background: white;
 }
 
-input::placeholder, textarea::placeholder { color: #bbb; }
+input::placeholder, textarea::placeholder { 
+  color: #aaa; 
+}
 
 select {
   appearance: none;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7' viewBox='0 0 10 7'%3E%3Cpolygon points='0,0 10,0 5,7' fill='%23555'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  background-position: right 0.75rem center;
-  background-color: rgba(255,255,255,0.88);
-  padding-right: 2rem;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
   cursor: pointer;
 }
 
-/* === PLACEMENT GRILLE EXPLICITE === */
-/* Ligne 1 : Nom / Prénom */
-label[for="nom"]    { grid-column: 1; grid-row: 1; }
-input#nom           { grid-column: 1; grid-row: 2; }
-label[for="prenom"] { grid-column: 2; grid-row: 1; }
-input#prenom        { grid-column: 2; grid-row: 2; }
+h3.section-subtitle {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
 
-/* Ligne 2 : Email / Pays */
-label[for="email"]  { grid-column: 1; grid-row: 3; }
-input#email         { grid-column: 1; grid-row: 4; }
-label[for="pays"]   { grid-column: 2; grid-row: 3; }
-input#pays          { grid-column: 2; grid-row: 4; }
+.radio-group {
+  display: flex;
+  gap: 1.5rem;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  border: 1.5px solid rgba(0,0,0,0.1);
+  width: 100%;
+}
 
-/* Ligne 3 : Age / Genre */
-label[for="age"]    { grid-column: 1; grid-row: 5; }
-input#age           { grid-column: 1; grid-row: 6; }
-label[for="genre"]  { grid-column: 2; grid-row: 5; }
-select#genre        { grid-column: 2; grid-row: 6; }
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 0;
+  color: #333;
+}
 
-/* Ligne 4 : Radios */
-input#etudiant {
-  grid-column: 1; grid-row: 7;
-  display: inline-block;
-  width: auto;
-  margin-bottom: 0;
-  padding: 0;
-  background: none;
-  border: none;
+.radio-label input[type="radio"] {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0;
   accent-color: #d81196;
   cursor: pointer;
-}
-label[for="etudiant"] {
-  grid-column: 1; grid-row: 7;
-  display: inline-block;
-  font-weight: 500;
-  margin-left: 1.4rem;
-  margin-bottom: 0;
-  vertical-align: middle;
-  cursor: pointer;
-}
-input#prof {
-  grid-column: 2; grid-row: 7;
-  display: inline-block;
-  width: auto;
-  margin-bottom: 0;
-  padding: 0;
-  background: none;
-  border: none;
-  accent-color: #d81196;
-  cursor: pointer;
-}
-label[for="prof"] {
-  grid-column: 2; grid-row: 7;
-  display: inline-block;
-  font-weight: 500;
-  margin-left: 1.4rem;
-  margin-bottom: 0;
-  vertical-align: middle;
-  cursor: pointer;
-}
-input#autre {
-  grid-column: 1; grid-row: 8;
-  display: inline-block;
-  width: auto;
-  margin-bottom: 0;
-  padding: 0;
-  background: none;
-  border: none;
-  accent-color: #d81196;
-  cursor: pointer;
-}
-label[for="autre"] {
-  grid-column: 1; grid-row: 8;
-  display: inline-block;
-  font-weight: 500;
-  margin-left: 1.4rem;
-  margin-bottom: 0.3rem;
-  vertical-align: middle;
-  cursor: pointer;
-}
-
-/* h3 + textarea */
-h3 {
-  grid-column: 1 / -1; grid-row: 9;
-  font-size: 0.8rem;
-  font-weight: 600;
-  margin-bottom: 0.18rem;
 }
 
 textarea {
-  grid-column: 1 / -1; grid-row: 10;
-  min-height: 60px;
-  max-height: 70px;
-  resize: none;
+  min-height: 100px;
+  max-height: 200px;
+  resize: vertical;
+}
+
+.submit-btn {
+  margin-top: 1.5rem;
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(90deg, #ff4e1a, #ff6b35);
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(255, 78, 26, 0.4);
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg, #ff6b35, #ff843d);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 78, 26, 0.6);
 }
 
 a {
@@ -306,6 +295,16 @@ a {
 }
 
 a:hover {
-  background: #5a8ae6;
-  transform: translateY(-1px);
+  background: #ff843d;
+  transform: translateY(-2px);
 }
+
+@media (max-width: 600px) {
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+  .radio-group {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
