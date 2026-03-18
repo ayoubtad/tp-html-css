@@ -56,7 +56,7 @@ switch ($mois_actuel) {
 }
 ?>
 
-<body class="<?php echo $classe; ?> saison-<?php echo $saison; ?>">
+<body class="<?php echo $eau; ?> saison-<?php echo $saison; ?>">
         <nav>
                 <ul>
                         <li><a href="index.php">Accueil</a></li>
