@@ -4,11 +4,16 @@
 <head>
         <meta charset="UTF-8">
         <title>description de la temperature de l'eau</title>
-        <link rel="stylesheet" href="../css/style_eau.css" />
+        <link rel="stylesheet" href="../css/style_eau.css?v=<?php echo time(); ?>" />
 </head>
 
 <?php
-$temperature = 200;
+$temperature = 20; // Default
+
+if (isset($_GET['temperature'])) {
+    $temperature = (float) $_GET['temperature'];
+}
+
 $eau = "";
 
 if ($temperature < 0) {
@@ -43,10 +48,14 @@ if ($temperature < 0) {
         </nav>
 
         <main>
+                <form action="eau.php" method="GET" class="water-form">
+                    <label for="temperature">Saisir une température : </label>
+                    <input type="number" step="any" name="temperature" id="temperature" value="<?php echo htmlspecialchars((string)$temperature); ?>" class="temperature-input">
+                    <button type="submit" class="calc-btn">Vérifier</button>
+                </form>
+
                 <h1><?php echo $titre; ?></h1>
-                <p class="temperature"><?php echo $temperature; ?>°C</p>
-
-
+                <p class="temperature"><?php echo htmlspecialchars((string)$temperature); ?>°C</p>
         </main>
 </body>
 

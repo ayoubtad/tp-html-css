@@ -24,23 +24,44 @@
   <main>
     <h1>Accueil</h1>
 
-    <section>
-      <h2>C'est quoi HTML</h2>
-      <img src="../images/image.png" alt="Logo HTML5" height="130">
-      <p>HTML (HyperText Markup Language) est un langage standard dans le développement web.
-        Il sert à créer la structure des pages web grâce à des balises pour organiser le contenu
-        tel que les titres, les paragraphes, les images et les liens,
-        afin qu'il soit correctement affiché dans la page web.</p>
-    </section>
+    <div class="home-layout">
+      <section class="category-section">
+        <h2>Langages</h2>
+        <div class="cards-container">
+          <article class="card">
+            <h3>PHP</h3>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP">
+            <p>PHP est un langage de programmation côté serveur. Il est principalement utilisé pour générer des pages web dynamiques et communiquer avec les bases de données.</p>
+          </article>
+          <article class="card">
+            <h3>HTML</h3>
+            <img src="../images/image.png" alt="HTML5">
+            <p>HTML est le langage standard du développement web. Il sert à bâtir la structure de la page et à organiser le contenu à l'aide d'un puissant système de balises.</p>
+          </article>
+          <article class="card">
+            <h3>CSS</h3>
+            <img src="../images/image copy.png" alt="CSS3">
+            <p>Le CSS définit l'apparence et le design visuel de vos pages (couleurs, polices, tailles, marges). Il est le complément indispensable du HTML.</p>
+          </article>
+        </div>
+      </section>
 
-    <section>
-      <h2>C'est quoi CSS</h2>
-      <img src="../images/image copy.png" alt="Logo CSS3" height="130">
-      <p>CSS (Cascading Style Sheets) est le langage utilisé pour définir l'apparence
-        et la mise en forme des pages web. Il permet de modifier les couleurs, les tailles,
-        les polices, les marges et la disposition des éléments HTML.
-        Le CSS est complémentaire au HTML : HTML structure le contenu, CSS le rend visuellement attractif.</p>
-    </section>
+      <section class="category-section">
+        <h2>EDI</h2>
+        <div class="cards-container">
+          <article class="card">
+            <h3>VScode</h3>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VScode">
+            <p>C'est l'environnement de développement intégré qu'on utilise.</p>
+          </article>
+          <article class="card">
+            <h3>IntelliJ</h3>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg" alt="IntelliJ">
+            <p>C'est un environnement de développement intégré connu.</p>
+          </article>
+        </div>
+      </section>
+    </div>
 
     <div class="cta-button">
       <a href="./formulaire.php">Aller au formulaire</a>
